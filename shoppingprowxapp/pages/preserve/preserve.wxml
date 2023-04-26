@@ -1,0 +1,5 @@
+<!--pages/preserve/preserve.wxml-->
+<view class="preserve-container">
+  敬请期待
+  <button class='back' bindtap="handlerBack">返回首页</button>
+</view>

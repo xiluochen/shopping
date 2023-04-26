@@ -1,0 +1,112 @@
+<view>
+<view class="header">
+  <view class="user-icon">
+    <image class='user-icon-img' src='../../static/icons/center.png' bindtap="handlerIconShow" />
+    <view wx:if='{{isListShow&&userInfo.username}}' class="center-list">
+      <view 
+        class="shopcar item" 
+        data-target='/pages/shopcar/shopcar'
+        bindtap="handlerNavigate"
+      >
+        购物车
+      </view>
+      <view 
+        class="edit item" 
+        data-target='/pages/edit/edit'
+        bindtap="handlerNavigate"
+      >
+        地址信息
+      </view>
+    </view>
+  </view>
+  <view class="title-box">
+        <view 
+          wx:if="{{userInfo.username}}" 
+          class="user-tit"
+        >
+          欢迎光临，<text>{{ userInfo.username }}</text>
+        </view>
+        <view 
+          wx:else 
+          class="default-tit"
+          bindtap="handlerLoginTap"
+        >
+          请先<text class='login'>登录</text>
+        </view>
+  </view>
+  <button 
+    wx:if="{{userInfo.username}}" 
+    class="logout"
+    bindtap="handlerLogout"
+  >
+    退出
+  </button>
+</view>
+<view class="swiper-wrapper">
+  <swiper autoplay class="swiper-box">
+    <swiper-item 
+      class="swiper-item-box"
+      wx:for="{{swiperData}}"
+      wx:key="id"
+    >
+        <image 
+          class='img' 
+          src="http://127.0.0.1:4000/img/{{item.imgUrl}}"
+          data-id='{{item.id}}' 
+          bindtap="handlerGoodDetail"
+        />
+        <view class="tit">{{item.title}}</view>
+    </swiper-item>
+  </swiper>
+  
+</view>
+<view class="recommend">
+  <view class="recommend-tit">
+    每日推荐
+  </view>
+  <swiper indicator-dots indicator-color='rgba(255,255,255, .3)' indicator-active-color="rgba(0,0,0,.3)" class="recommend-body">
+    <swiper-item 
+      class="recommend-body-item" 
+      wx:for="{{recommend}}" 
+      wx:key="id"  
+    >
+      <image 
+        class='recommend-item-img' 
+        src="http://127.0.0.1:4000/img/{{item.imgUrl}}"  
+      />
+    </swiper-item>
+  </swiper>
+</view>
+<view class="navigate-box">
+  <view class="navigate-tit">帮助中心</view>
+  <view class="navigate-body">
+    <view
+      wx:for="{{helps}}"
+      wx:key="title"
+      class="navigate-item"
+    >
+      <view 
+        class="tit"
+        data-index="{{index}}"
+        bindtap="handlerTapHelp"
+      >{{item.title}}</view>
+      <view 
+        class="lists"
+        style="height:{{item.isChecked?(item.children.length*60):0}}rpx;"
+      >
+        <view
+          class="list-item"
+          wx:for="{{item.children}}"
+          wx:for-item='subitem'
+          wx:for-index='subind'
+          wx:key="title"
+          data-target='{{subitem.target}}'
+          bindtap="handlerTapNavigate"
+        >
+          {{ subitem.title }}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,49 @@
+<view class="settle-container">
+  <view class="locs-box">
+  <view class="locs-tit">收货地址:</view>
+    <view class="loc-show">
+      <view class="name">收件人:{{ locs[0].target }}</view>
+      <view class="phone">联系电话:{{ locs[0].phone }}</view>
+      <view class="loc">收货地:{{ locs[0].loc }}</view>
+    </view>
+    <view class="locs">
+      <view
+       wx:for="{{ locs}}"
+       wx:key="id"
+       wx:if="{{index>0}}"
+       bindtap="handlerLocTap"
+       class="loc-item"
+       data-index='{{ index }}'
+      >
+        <view class="name">{{ item.target }}</view>
+        <view class="phone">{{ item.phone }}</view>
+        <view class="loc">{{ item.loc }}</view>
+      </view>
+    </view>
+  </view>
+  <view class="goods-container">
+  <view class="goods-tit">
+    商品
+  </view>
+    <view 
+      class="good-item"
+      wx:for="{{ goods }}"
+      wx:key="id"
+    >
+      <view class="name">{{ item.target.title }}</view>
+      <view class="img-box">
+        <image class='img' src="http://127.0.0.1:4000/img/{{item.target.imgUrl}}"/>
+      </view>
+      <view class="num">{{ item.num }}</view>
+      <view class="sum">{{ item.num * item.target.price }}</view>
+    </view>
+  </view>
+  <view class="btns">
+    <view class="countdown">
+      <text>{{ minutes }}</text>
+      :
+      <text>{{ seconds }}</text>
+    </view>
+    <button class="buy" bindtap='handlerBuyfor'>购买</button>
+  </view>
+</view>

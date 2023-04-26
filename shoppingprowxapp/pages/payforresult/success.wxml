@@ -1,0 +1,3 @@
+<view class="result-container">
+  <view class="success">购买成功{{seconds}}s后返回首页</view>
+</view>

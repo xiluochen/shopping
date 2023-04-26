@@ -1,0 +1,35 @@
+<view class="shopcar-container">
+  <view class="shopcar-tit">
+    <text>购物车</text>
+  </view>
+  <view class="shopcar-body">
+    <view wx:if='{{shopcarInfos.length>0}}'>
+      <view class="items" wx:for='{{shopcarInfos}}' wx:key="id">
+        <view class="check">
+          <checkbox data-index='{{index}}' bindtap="handlerCheckChanged" checked='{{ item.isChecked }}'></checkbox>
+        </view>
+        <view class="img-box">
+          <image class='img' src='http://127.0.0.1:4000/img/{{item.target.imgUrl}}' />
+        </view>
+        <view class="name">{{ item.target.title }}</view>
+        <view class="num">{{ item.num}}件</view>
+        <view class="sum">{{ item.num * item.target.price}}元</view>
+        <view class="del">
+          <text class="iconfont icon-shanchu2"></text>
+        </view>
+      </view>
+    </view>
+    <view class="no-items" wx:else>
+      无
+    </view>
+  </view>
+  <view class="btns">
+    <view class="select-all">
+      <checkbox disabled="{{shopcarInfos.length<=0}}" class="check" bindtap="handlerClickAll" checked='{{isAll}}' bindtap='handlerCheckedAll' />
+    </view>
+    <view class="tot-info">
+      共计<text class="tot-num val">{{checkInds.ids.length}}</text>件商品<text class="tot-mon val">{{checkInds.totMoney}}</text>元
+    </view>
+    <button class="buy" bindtap="handlerBuy">购买</button>
+  </view>
+</view>

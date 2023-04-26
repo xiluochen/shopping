@@ -1,0 +1,31 @@
+<view class="good-container">
+  <view class="good-img">
+    <image class='img' src='http://127.0.0.1:4000/img/{{detail.imgUrl}}' />
+  </view>
+  <view class="infos">
+    <view class="name info">
+    商品名: 
+    <text class="value">{{ detail.title }}</text>
+    </view>
+    <view class="price info">
+    <text space="emsp">单 价:</text>
+    <text class="value">{{ detail.price}}</text>
+    </view>
+    <view class="number info">
+      <text space="emsp" class="title">数 量:</text>
+      <input 
+        class="number" 
+        value='{{nums}}' 
+        type='number' 
+        placeholder="请输入待购商品数量" 
+        bindinput="handlerCount"
+      />
+    </view>
+    <button 
+      class="buy" 
+      bindtap="handlerAddShopcar"
+    >
+      加入购物车
+    </button>
+  </view>
+</view>

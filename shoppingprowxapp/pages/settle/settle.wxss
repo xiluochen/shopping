@@ -1,0 +1,180 @@
+.settle-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.settle-container .locs-box {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.settle-container .locs-box .locs-tit{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  font-weight: 700;
+  border-bottom: 1rpx solid rgba(0,0,0,.1);
+}
+
+.settle-container .locs-box .loc-show {
+  width: 100%;
+  height: 160rpx;
+  line-height: 160rpx;
+}
+
+.settle-container .locs-box .loc-show .name {
+  float:left;
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.settle-container .locs-box .loc-show .phone {
+  float:left;
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: left;
+}
+
+.settle-container .locs-box .loc-show .loc {
+  float:left;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.settle-container .locs-box .locs {
+  width: 100%;
+  height: 200rpx;
+  line-height: 200rpx;
+  padding: 0 20rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  border: 1rpx solid rgba(0,0,0,.3);
+  overflow: auto;
+}
+.settle-container .locs-box .locs .loc-item {
+  width: 100%;
+  height: 160rpx;
+  border-collapse: collapse;
+  border-bottom: 1rpx solid rgba(0,0,0,.1);
+}
+.settle-container .locs-box .locs .loc-item .name {
+  float:left;
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  text-align: left;
+}
+.settle-container .locs-box .locs .loc-item .phone {
+  float:left;
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  text-align: left;
+}
+.settle-container .locs-box .locs .loc-item .loc {
+  float:left;
+  width: 100%;
+  height: 60rpx;
+  margin: 10rpx 0;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  text-align: left;
+}
+
+.settle-container .goods-container {
+  width: 100%;
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid rgba(0,0,0,.3);
+}
+
+.settle-container .goods-container .goods-tit {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  font-weight: 700;
+  border-bottom: 1rpx solid rgba(0,0,0,.1);
+}
+.settle-container .goods-container .good-item {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+
+.settle-container .goods-container .good-item .name {
+  float: left;
+  width: 25%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.settle-container .goods-container .good-item .img-box {
+  float: left;
+  width: 25%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.settle-container .goods-container .good-item .img-box .img  {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.settle-container .goods-container .good-item .num {
+  float: left;
+  width: 25%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.settle-container .goods-container .good-item .sum{
+  float: left;
+  width: 25%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.settle-container .btns {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+.settle-container .btns .countdown {
+  float: left;
+  width: 200rpx;
+  height: 80rpx;
+  color: #4491FC;
+  margin-left: 20rpx;
+  text-align: center;
+}
+.settle-container .btns .buy {
+  float: right;
+  width:200rpx;
+  height: 80rpx;
+  margin-right: 60rpx;
+  text-align: center;
+  font-weight: 400;
+}

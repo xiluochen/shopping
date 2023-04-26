@@ -1,0 +1,83 @@
+page {
+  background-color: rgba(68,145,252, .8);
+}
+
+.login-container {
+  width: 600rpx;
+  height: 600rpx;
+  text-align: center;
+  padding: 20rpx 10rpx;
+  margin: 120rpx auto;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.login-container .login-tit {
+  margin: 50rpx 0 30rpx;
+  font-size: 48rpx;
+  color: #4491FC;
+}
+
+.login-container .login-body {
+  font-size: 28rpx;
+}
+
+.login-container .login-body .username {
+  width: 500rpx;
+  height: 100rpx;
+  margin: 40rpx auto 20rpx;
+  /* background-color: #aaa; */
+}
+
+.login-container .login-body .username .label {
+ float: left;
+  width: 150rpx;
+  height: 80rpx;
+  margin-top: 10rpx;
+  line-height: 80rpx;
+}
+
+.login-container .login-body .username .name-inp {
+  width: 300rpx;
+  height: 60rpx;
+  padding: 0 20rpx;
+  margin-top: 20rpx;
+  float: left;
+  text-align: left;
+  box-sizing: border-box;
+  box-shadow: 0 0 3rpx rgba(0, 0, 0, .6);
+  border-radius: 10rpx;
+}
+
+.login-container .login-body .password {
+  width: 500rpx;
+  height: 100rpx;
+  margin: 0 auto 20rpx;
+}
+
+.login-container .login-body .password .label {
+  float: left;
+   width: 150rpx;
+   height: 80rpx;
+   margin-top: 10rpx;
+   line-height: 80rpx;
+ }
+
+.login-container .login-body .password .password-inp {
+  width: 300rpx;
+  height: 60rpx;
+  padding: 0 20rpx;
+  margin-top: 20rpx;
+  float: left;
+  text-align: left;
+  box-sizing: border-box;
+  box-shadow: 0 0 3rpx rgba(0, 0, 0, .6);
+  border-radius: 10rpx;
+}
+
+.login-container .login-body .login-btn {
+  width: 200rpx;
+  height: 80rpx;
+  background-color: #ccc;
+  color: #fff;
+}

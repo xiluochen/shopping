@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/preserve/preserve",
+    "pages/good/good",
+    "pages/shopcar/shopcar",
+    "pages/payforresult/success",
+    "pages/settle/settle"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4491FC",
+    "navigationBarTitleText": "shoppingpro",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,22 @@
+<view class='login-container'>
+  <view class="login-tit">Shopping</view>
+  <form class="login-body" bindsubmit="handlerLoginBtn">
+    <view class="username">
+      <view class='label'>用户名:</view>
+      <input 
+      name='username'
+      class='name-inp' type="text"  />
+    </view>
+    <view class="password">
+      <text class='label' space="emsp">密 码:</text>
+      <input name='password' class='password-inp' type="password" 
+      />
+    </view>
+    <button 
+      class="login-btn"
+      form-type="submit"
+    >
+      登录
+    </button>
+  </form>
+</view>

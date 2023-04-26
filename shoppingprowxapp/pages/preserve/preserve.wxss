@@ -1,0 +1,13 @@
+.preserve-container {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.preserve-container .back {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #4491FC;
+  background-color: #fff;
+}
